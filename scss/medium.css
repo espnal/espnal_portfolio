@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1130px) {
+  .download-btn {
+    width: 100%;
+  }
+  .socials {
+    display: grid;
+  }
+  .socials .icon-container {
+    margin-left: 2.5em;
+  }
+  .general-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}/*# sourceMappingURL=medium.css.map */

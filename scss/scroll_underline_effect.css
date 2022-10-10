@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.options.active-li::after {
+  width: 100%;
+  left: 0;
+}/*# sourceMappingURL=scroll_underline_effect.css.map */

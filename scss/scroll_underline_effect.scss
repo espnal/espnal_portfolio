@@ -1,0 +1,7 @@
+@import "./variables";
+@import "./resets";
+
+.options.active-li::after {
+  width: 100%;
+  left: 0;
+}
