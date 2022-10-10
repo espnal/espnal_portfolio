@@ -12,7 +12,7 @@
 .icon-2,
 .icon-3 {
     position: absolute;
-    left: 25%;
+    left: 20%;
     top: 50%;
     width: 35px;
     height: 2px;
@@ -69,5 +69,25 @@
   .general-div #aside-id.show {
     width: 100%;
     opacity: 1;
+  }
+  .skills-container ul {
+    padding: 0px;
+  }
+  .skills-container li {
+    margin: 0.5em 0 0.5em 0;
+  }
+  .contact .inner-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .contact .form-div {
+    margin: 3em 2em 0 2em;
+  }
+  .contact form button {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .socials .icon-container {
+    margin-left: 1em;
   }
 }/*# sourceMappingURL=small.css.map */
