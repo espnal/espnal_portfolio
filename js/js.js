@@ -21,12 +21,6 @@ inf.forEach((ItemHeader) => {
   });
 });
 
-// const idname = $(".button");
-
-// for (var i = 0; i < idname.length; i++) {
-//   idname[i].addEventListener("click", animateButton, false);
-// }
-
 const form = document.getElementById("form");
 
 const username = document.getElementById("name");
@@ -98,4 +92,12 @@ icon.addEventListener("click", function () {
   icon2.classList.toggle("c");
   icon3.classList.toggle("b");
   aside_id.classList.toggle("show");
+});
+
+const options = document.querySelectorAll(".options");
+
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    if (option.contains.classList("show")) aside_id.classList.remove("show");
+  });
 });

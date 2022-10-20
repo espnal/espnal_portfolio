@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 600px) {
   .presentation-container .img-banner .arrows {
     right: 38%;
   }

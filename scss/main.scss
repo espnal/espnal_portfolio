@@ -2,7 +2,7 @@
 @import "./resets";
 body {
   font-family: $font-family-one;
-  background-color: $bodyBG;
+  background-image: url(../images/bg.jpg);
   font-weight: map-get($font-weight, regular);
 }
 .hamburger-icon {
@@ -160,6 +160,7 @@ body {
   display: grid;
   // grid-template-columns:;
   width: 100%;
+
   height: auto;
   // animation: banner-box 10s infinite linear alternate;
   background-size: 100% 100%;
@@ -285,6 +286,7 @@ body {
 }
 
 .about-container {
+  background-color: #fff;
   padding: $whiteSecctionSize;
   height: auto;
   span {
@@ -493,10 +495,11 @@ body {
 }
 
 .educ-container {
-  padding: 2.5em 1.5em 2.5em 1.5em;
+  background-color: #fff;
+  padding: 4.5em 1.5em 5.5em 1.5em;
   height: auto;
-  margin-bottom: 3em;
-  margin-top: 2em;
+  // margin-bottom: 3em;
+  // margin-top: 2em;
   span {
     line-height: 18px;
     vertical-align: baseline;
@@ -593,9 +596,9 @@ body {
 }
 .experience-container {
   height: auto;
-  margin-bottom: 3em;
-  margin-top: 2em;
-  padding: 1em 1.5em 5em 1.5em;
+  // margin-bottom: 3em;
+  // margin-top: 2em;
+  padding: 2em 1.5em 6.5em 1.5em;
   height: auto;
   background-color: $primary-color;
   position: relative;
@@ -700,10 +703,11 @@ body {
   }
 }
 .work-container {
-  padding: 2.5em 1.5em 2.5em 1.5em;
+  background-color: #fff;
+  padding: 3.5em 1.5em 5.5em 1.5em;
   height: auto;
-  margin-bottom: 3em;
-  margin-top: 2em;
+  // margin-bottom: 3em;
+  // margin-top: 2em;
 
   #work {
     line-height: 18px;
@@ -785,8 +789,8 @@ body {
 
 .contact {
   height: 100%;
-  margin-top: 2em;
-  padding: 1em 1.5em 5em 1.5em;
+  // margin-top: 2em;
+  padding: 3.5em 1.5em 5.5em 1.5em;
   height: auto;
   background-color: $primary-color;
   span {
@@ -875,6 +879,7 @@ body {
   }
   form button {
     position: relative;
+    margin-top: 8px;
     padding: 11px 18px;
     text-transform: uppercase;
     background-color: $secondary-color;
