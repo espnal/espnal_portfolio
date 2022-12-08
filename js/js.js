@@ -83,7 +83,6 @@ const icon1 = document.getElementById("a");
 const icon2 = document.getElementById("b");
 const icon3 = document.getElementById("c");
 const nav = document.getElementById("nav");
-// const blue = document.getElementById("blue");
 const aside_id = document.getElementById("aside-id");
 
 icon.addEventListener("click", function () {
@@ -98,6 +97,18 @@ const options = document.querySelectorAll(".options");
 
 options.forEach((option) => {
   option.addEventListener("click", () => {
-    if (option.contains.classList("show")) aside_id.classList.remove("show");
+    if (option.contains.classList("show")) {
+      aside_id.classList.remove("show");
+    }
   });
 });
+
+if (window.innerWidth < 768) {
+  const mainUl = document.querySelectorAll(".main-ul li");
+
+  mainUl.forEach((li) => {
+    li.addEventListener("click", () => {
+      aside_id.classList.remove("show");
+    });
+  });
+}
