@@ -112,3 +112,17 @@ if (window.innerWidth < 768) {
     });
   });
 }
+
+const skillLi = document.querySelectorAll(".skills li");
+skillLi.forEach((skill) => {
+  skill.addEventListener("mouseover", () => {
+    const beforeElement = window.getComputedStyle(skill, "::before");
+    beforeElement.transform = "translateX(-10px);";
+  });
+});
+
+const arrow = document.querySelector(".arrows");
+arrow.addEventListener("click", () => {
+  let pageHeight = window.innerHeight;
+  window.scrollBy(0, pageHeight);
+});

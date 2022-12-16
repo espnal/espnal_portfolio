@@ -32,7 +32,7 @@
   }
   .hamburger-icon {
     display: block;
-    position: fixed;
+    position: absolute;
     height: 60px;
     width: 60px;
     top: 5px;
