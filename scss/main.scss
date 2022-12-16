@@ -1,5 +1,8 @@
 @import "./variables";
 @import "./resets";
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $font-family-one;
   background-image: url(../images/bg.jpg);
@@ -180,7 +183,7 @@ body {
       cursor: pointer;
       position: absolute;
       top: 80%;
-      right: 45%;
+      right: 50%;
       animation-name: updown;
       animation-duration: 1s;
       // animation-timing-function: linear;

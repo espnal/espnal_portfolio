@@ -124,5 +124,10 @@ skillLi.forEach((skill) => {
 const arrow = document.querySelector(".arrows");
 arrow.addEventListener("click", () => {
   let pageHeight = window.innerHeight;
-  window.scrollBy(0, pageHeight);
+  window.scrollBy({
+    top: pageHeight,
+    left: 0,
+    behaviour: "smooth",
+  });
+  // window.scrollBy(0, pageHeight);
 });
