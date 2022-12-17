@@ -103,12 +103,16 @@ options.forEach((option) => {
   });
 });
 
-if (window.innerWidth < 768) {
+if (window.innerWidth < 800) {
   const mainUl = document.querySelectorAll(".main-ul li");
 
   mainUl.forEach((li) => {
     li.addEventListener("click", () => {
       aside_id.classList.remove("show");
+      icon.classList.remove("active");
+      icon1.classList.remove("a");
+      icon2.classList.remove("c");
+      icon3.classList.remove("b");
     });
   });
 }

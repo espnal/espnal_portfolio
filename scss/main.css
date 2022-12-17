@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: Quicksand, Arial, sans-serif;
-  background-image: url(../images/bg.jpg);
+  background-color: #222222;
   font-weight: 300;
 }
 
@@ -31,6 +31,9 @@ body {
 .container-wrap {
   max-width: 1255px;
   margin: 0 auto;
+  box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
 }
 
 @media screen and (max-height: 800px) {
@@ -526,7 +529,7 @@ body {
   color: #fff;
   background-color: #222222;
   border: 1px solid #cccccc;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 27px;
   letter-spacing: normal;
   word-spacing: 0px;
