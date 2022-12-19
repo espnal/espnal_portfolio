@@ -511,7 +511,7 @@ body {
       border-radius: 100%;
       background-color: $secondary-color;
       left: -30px;
-      top: 80px;
+      margin-top: 9px;
     }
   }
 }
@@ -645,9 +645,9 @@ body {
     color: $text-color;
   }
   .date-span {
-    margin-left: 3px;
+    float: right;
     opacity: 0.6;
-    font-size: 12px;
+    font-size: 16px;
   }
   h2 {
     margin: 1em 0 2.5em 0;
@@ -658,6 +658,7 @@ body {
   h4 {
     display: inline-block;
     margin: 0 0 1em 0;
+    font-size: 22px;
   }
   article::before {
     content: "";
@@ -682,6 +683,14 @@ body {
       margin-block-end: 1em;
       margin-inline-start: 0px;
       margin-inline-end: 0px;
+
+      line-height: 27px;
+      vertical-align: baseline;
+      letter-spacing: normal;
+      word-spacing: 0px;
+      padding: 0px;
+      font-size: 17px;
+      color: RGBA(0, 0, 0, 0.7);
     }
   }
   .art::before {
