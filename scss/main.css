@@ -173,10 +173,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.presentation-container .img-banner .text-banner h1 {
+  margin-left: -10px;
+}
 .presentation-container .img-banner .arrows {
   cursor: pointer;
   position: absolute;
-  top: 80%;
+  top: 70%;
   right: 50%;
   -webkit-animation-name: updown;
           animation-name: updown;
@@ -648,6 +651,7 @@ body {
   padding: 0px;
   font-size: 17px;
   color: RGBA(0, 0, 0, 0.7);
+  text-align: justify;
 }
 .experience-container .art::before {
   content: "";

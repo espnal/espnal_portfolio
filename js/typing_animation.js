@@ -1,8 +1,8 @@
 var words = [
     "My name is Roguin",
     "Welcome to my website",
-    "Press the button below to",
-    "See my profetional background",
+    "Press the button below",
+    "To See my background",
   ],
   part,
   i = 0,
@@ -13,7 +13,7 @@ var words = [
   skip_delay = 15,
   speed = 70;
 
-var wordflick = function () {
+const wordflick = function () {
   setInterval(function () {
     if (forwards) {
       if (offset >= words[i].length) {

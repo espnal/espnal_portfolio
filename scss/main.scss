@@ -183,10 +183,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .text-banner h1 {
+      margin-left: -10px;
+    }
     .arrows {
       cursor: pointer;
       position: absolute;
-      top: 80%;
+      top: 70%;
       right: 50%;
       animation-name: updown;
       animation-duration: 1s;
@@ -691,6 +694,7 @@ body {
       padding: 0px;
       font-size: 17px;
       color: RGBA(0, 0, 0, 0.7);
+      text-align: justify;
     }
   }
   .art::before {
