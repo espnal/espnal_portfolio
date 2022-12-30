@@ -183,9 +183,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    .text-banner h1 {
-      margin-left: -10px;
-    }
+    // .text-banner h1 {
+    //   margin-left: -10px;
+    // }
+    // #text-banner-span1 {
+    //   margin-left: 10px;
+    // }
+    // #text-banner-span2 {
+    //   margin-left: 10px;
+    // }
     .arrows {
       cursor: pointer;
       position: absolute;
@@ -451,7 +457,7 @@ body {
     }
   }
   .yellow::before {
-    border-right: 15px solid #f87060;
+    border-right: 15px solid #333333;
   }
   .green::before {
     border-right: 15px solid#168d5a;
@@ -502,7 +508,7 @@ body {
       height: 20px;
       width: 20px;
       border-radius: 100%;
-      background-color: #f87060;
+      background-color: #333333;
       left: -30px;
       top: 42px;
     }
@@ -808,21 +814,22 @@ body {
     }
     button {
       margin-left: auto;
-      width: 70px;
+      width: 100%;
       background-color: transparent;
       color: $text-color;
-      border: 2px solid #fff;
+      border: 3px solid #3f3f3f;
       cursor: pointer;
       margin-top: 1.5em;
       margin-bottom: 1.5em;
       margin-right: 1.5em;
       height: 40px;
       font-size: 15px;
+      border-radius: 5px;
     }
     button:hover {
       background-color: transparent;
       color: #fff;
-      border: 2px solid $secondary-color;
+      border: 3px solid #5a5a5a;
     }
   }
 }
