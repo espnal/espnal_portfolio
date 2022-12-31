@@ -325,6 +325,7 @@ body {
 .about-container p {
   margin-top: 2em;
   margin-bottom: 2em;
+  text-align: justify;
 }
 .about-container .about-text {
   line-height: 27px;
