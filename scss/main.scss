@@ -552,7 +552,7 @@ body {
     font-size: 10px;
   }
   h2 {
-    margin: 1.5em 0 1.5em 0;
+    margin: 1em 0 1.5em 0;
     font-family: $font-family-two;
   }
   .detail-group {
@@ -633,8 +633,6 @@ body {
 }
 .experience-container {
   height: auto;
-  // margin-bottom: 3em;
-  // margin-top: 2em;
   padding: 2em 1.5em 6.5em 1.5em;
   height: auto;
   background-color: $primary-color;
@@ -653,6 +651,7 @@ body {
     text-indent: 0px;
     font-size: 10px;
     color: $text-color;
+    margin-left: 4.5em;
   }
   .date-span {
     float: right;
@@ -660,7 +659,7 @@ body {
     font-size: 16px;
   }
   h2 {
-    margin: 1em 0 2.5em 0;
+    margin: 1em 0 2.5em 1.8em;
     font-family: $font-family-two;
     color: $text-color;
     //
@@ -769,9 +768,10 @@ body {
     text-align: start;
     text-indent: 0px;
     font-size: 10px;
+    margin-left: 4em;
   }
   h2 {
-    margin: 1.5em 0 1.5em 0;
+    margin: 1em 1.5em 1.5em 1.5em;
     font-family: $font-family-two;
   }
   .general-work {
@@ -798,8 +798,12 @@ body {
     margin-bottom: 1.5em;
     padding: 0 1em;
 
-    .folder i {
-      font-size: 48px;
+    // .folder i {
+    //   font-size: 48px;
+    //   color: $secondary-color;
+    // }
+    .folder img {
+      width: 60px;
       color: $secondary-color;
     }
     .git-link-icon {
@@ -900,7 +904,12 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+  .contact-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .icon-container {
     display: flex;
     flex-direction: column;

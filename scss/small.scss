@@ -80,13 +80,7 @@
     width: 60px;
     height: 60px;
   }
-  .contact .form-div {
-    margin: 3em 2em 0 2em;
-  }
-  .contact form button {
-    width: 100%;
-    margin-top: 1em;
-  }
+
   .socials .icon-container {
     margin-left: 1em;
   }
@@ -145,5 +139,24 @@
     font-size: 16px;
     display: block;
     text-align: center;
+  }
+  .general-contact {
+    flex-direction: initial;
+  }
+  .contact p {
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    vertical-align: baseline;
+    word-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  .contact .socials {
+    margin-top: 2em;
+    margin-right: 0em;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
