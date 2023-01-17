@@ -390,6 +390,7 @@ body {
     font-size: 17px;
     margin-top: 2em;
     margin-bottom: 2em;
+    text-align: justify;
   }
   ul {
     display: grid;
@@ -511,7 +512,7 @@ body {
       border-radius: 100%;
       background-color: #333333;
       left: -30px;
-      top: 42px;
+      margin-top: 9px;
     }
     #oragen-l::before {
       position: absolute;
@@ -535,8 +536,6 @@ body {
   background-color: #fff;
   padding: $whiteSecctionSize;
   height: auto;
-  // margin-bottom: 3em;
-  // margin-top: 2em;
   span {
     line-height: 18px;
     vertical-align: baseline;
@@ -597,7 +596,7 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #333333;
+  background-color: #1a1a1a;
   ul {
     margin-left: 1.5em;
     margin-bottom: 1.5em;
@@ -668,6 +667,11 @@ body {
     display: inline-block;
     margin: 0 0 1em 0;
     font-size: 22px;
+    span {
+      color: #818181;
+      font-size: 15px;
+      font-weight: map-get($font-weight, regular);
+    }
   }
   article::before {
     content: "";
@@ -754,7 +758,9 @@ body {
   height: auto;
   // margin-bottom: 3em;
   // margin-top: 2em;
-
+  .a-link {
+    display: block;
+  }
   #work {
     line-height: 18px;
     vertical-align: baseline;

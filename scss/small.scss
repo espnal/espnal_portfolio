@@ -70,6 +70,36 @@
     width: 100%;
     opacity: 1;
   }
+  .about-container {
+    padding: 3em 2em 3em 2em;
+  }
+  .skills-container {
+    padding: 1em 1.5em 1em 1.5em;
+    height: auto;
+    background-color: #222222;
+  }
+  .skills-container .leyenda {
+    line-height: 36px;
+    margin-left: 2.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+  .educ-container {
+    background-color: #fff;
+    padding: 3em 2em 3em 2em;
+    height: auto;
+  }
+  .inf::after {
+    content: "+";
+    position: absolute;
+    right: 48px;
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 1px;
+    color: #ff8b00;
+  }
   .skills-container ul {
     padding: 0px;
   }
@@ -138,7 +168,7 @@
     opacity: 0.6;
     font-size: 16px;
     display: block;
-    text-align: center;
+    text-align: left;
   }
   .general-contact {
     flex-direction: initial;
