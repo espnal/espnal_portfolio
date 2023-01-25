@@ -248,7 +248,7 @@ body {
   font-size: 16px;
   color: #ff8b00;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 300;
   font-family: Quicksand, Arial, sans-serif;
 }
@@ -257,6 +257,11 @@ body {
   line-height: 1.5;
   font-weight: 300;
   font-family: Quicksand, Arial, sans-serif;
+}
+
+.space {
+  font-size: 0px;
+  color: transparent;
 }
 
 .download-btn {
@@ -605,6 +610,9 @@ body {
   float: right;
   opacity: 0.6;
   font-size: 16px;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
 }
 .experience-container h2 {
   margin: 1em 0 2.5em 1.8em;
@@ -613,7 +621,7 @@ body {
 }
 .experience-container h4 {
   display: inline-block;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0.5em;
   font-size: 22px;
 }
 .experience-container h4 span {
@@ -639,16 +647,13 @@ body {
   padding: 1.5em;
   position: relative;
 }
-.experience-container .art P {
-  display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+.experience-container .art ul li {
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
   line-height: 27px;
   vertical-align: baseline;
   letter-spacing: normal;
