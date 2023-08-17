@@ -124,16 +124,17 @@ body {
 }
 
 .img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  background-image: url("../images/3myself.jpg");
-  background-size: 150px;
+  background-image: url("../images/6myself.jpg");
+  background-size: 220px;
+  background-position-x: center;
 }
 
 .options {

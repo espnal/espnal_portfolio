@@ -9,8 +9,8 @@
     width: 100%;
   }
   .icon-1,
-.icon-2,
-.icon-3 {
+  .icon-2,
+  .icon-3 {
     position: absolute;
     left: 20%;
     top: 50%;
@@ -22,13 +22,11 @@
   }
   .icon-1 {
     transform: translateY(-10px);
-    -webkit-animation-delay: 100ms;
-            animation-delay: 100ms;
+    animation-delay: 100ms;
   }
   .icon-3 {
     transform: translateY(10px);
-    -webkit-animation-delay: 250ms;
-            animation-delay: 250ms;
+    animation-delay: 250ms;
   }
   .hamburger-icon {
     display: block;
