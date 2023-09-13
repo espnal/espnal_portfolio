@@ -523,7 +523,7 @@
               <span id="work">MY WORK</span>
               <h2>RECENT PROJECTS</h2>
               <div class="general-work">
-                <div class="work-order">
+                <div class="work-order" onclick="location.href=`${recipeApp}`">
                   <div class="text-work-order">
                     <div class="work-icons">
                       <div class="folder">
@@ -531,7 +531,9 @@
                         <img src="images/icons-folder.png" alt="folder" />
                       </div>
                       <div class="git-link-icon">
-                        <i class="fa-solid fa-code-branch"></i>
+                        <a href="https://github.com/espnal/recipes-app">
+                          <i class="fa-solid fa-code-branch"></i>
+                        </a>
                       </div>
                     </div>
                     <div class="main-content-work">
@@ -580,7 +582,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- </a> -->
+
                 <div
                   class="work-order"
                   onclick="location.href=`${phpmotorlink}`">
@@ -742,6 +744,7 @@
       const phpmotorlink = "https://github.com/espnal/phpmotors";
       const pokedexlink = "https://espnal.github.io/pokedex/";
       const Netflixlink = "https://espnal.github.io/netflixclone/";
+      const recipeApp = "https://recipes-app-view.vercel.app/";
     </script>
     <script src="js/js.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
