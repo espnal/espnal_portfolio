@@ -14,12 +14,6 @@
     <script
       src="https://kit.fontawesome.com/939c9d406a.js"
       crossorigin="anonymous"></script>
-    <!-- <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by srip - Flaticon</a> -->
-    <!-- <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a> -->
-    <!-- <a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a> -->
-    <!-- <a href="https://www.flaticon.com/free-icons/typescript" title="typescript icons">Typescript icons created by Freepik - Flaticon</a> -->
-    <!-- <a href="https://www.flaticon.com/free-icons/azure" title="azure icons">Azure icons created by Freepik - Flaticon</a> -->
-    <!-- <a href="https://www.flaticon.com/free-icons/wordpress" title="wordpress icons">Wordpress icons created by Freepik - Flaticon</a> -->
     <title>Roguin P. Espinal</title>
     <style>
       .outter-alert-div{
@@ -60,6 +54,9 @@
         cursor: pointer;
         font-size: 16px;
       }
+      .invitation-span{
+        color: #ff8b00;
+      }
       @media (max-width: 600px) {
         .main-alert-div {
           width: 90%; 
@@ -88,9 +85,9 @@
         <div class='main-alert-div'>
               <div class="inner-div">
                 <lottie-player src="js/code.json" background="transparent" speed="1" style="width: 280px; height: 280px; margin-top: -95px;" loop autoplay></lottie-player>
-                <div class="text-alert" style="margin-top: -38px; text-align: center">
+                <div class="text-alert" style="margin-top: -38px; text-align: center; line-height: 1.7em;">
                   <h2 style="padding-bottom:.5em; font-size:33px">Work in Progress</h2>
-                  <p style="line-height: 1.5em; font-size: 18px;">Hello! Thank you for your interest in this project. I'm working diligently to bring it to completion. Please check back soon for updates and developments.</p>
+                  <p style="line-height: 1.5em; font-size: 18px;">Thank you for your interest in this project. I'm working diligently to bring it to completion. Please check back soon for updates. <span class="invitation-span">Meanwhile, I invite you to see its repository <i class="fa-solid fa-code-branch"></i></span></p>
                   <button id="close-popup" class="close-popup">Got It!</button>
                 </div>
               </div>
@@ -653,7 +650,7 @@
                       </p>
                     </div>
                     <div class="span-tech">
-                      <span>HTML5</span><span>CSS</span><span>javaScript</span>
+                      <span>HTML5</span><span>CSS3</span><span>javaScript</span>
                     </div>
                   </div>
                 </div>
@@ -687,26 +684,26 @@
                     </div>
                   </div>
                 </div>
-                <div class="work-order">
+                <div class="work-order" onclick="location.href=`${Netflixlink}`">
                   <div class="text-work-order">
                     <div class="work-icons">
                       <div class="folder">
                         <img src="images/icons-folder.png" alt="folder" />
                       </div>
                       <div class="git-link-icon">
-                        <i class="fa-solid fa-code-branch"></i>
+                        <a href="https://github.com/espnal/netflixclone"><i class="fa-solid fa-code-branch"></i></a>
                       </div>
                     </div>
                     <div class="main-content-work">
-                      <h4>Travel Agency</h4>
+                      <h4>Netflix Clone</h4>
                       <p>
-                        Travel Agency page using current technologies, currently
-                        in demand, the website has a modern and innovative
-                        design adapted to the times.
+                        This project is a Netflix clone, with the main purpose 
+                        of demonstrating my skills as a developer and showing how 
+                        I can bring to life attractive and functional applications with the best practices.
                       </p>
                     </div>
                     <div class="span-tech">
-                      <span>HTML5</span><span>SASS</span><span>ReactJs</span>
+                      <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
                     </div>
                   </div>
                 </div>
@@ -733,22 +730,19 @@
                       </p>
                     </div>
                     <div class="span-tech">
-                      <span>HTML5</span><span>CSS3</span><span>javaScript</span>
+                      <span>TailwindCSS</span><span>ReactJs</span><span>MongoDb</span><span>NodeJs</span>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="work-order"
-                  onclick="location.href=`${Netflixlink}`">
+                  class="work-order">
                   <div class="text-work-order">
                     <div class="work-icons">
                       <div class="folder">
                         <img src="images/icons-folder.png" alt="folder" />
                       </div>
                       <div class="git-link-icon">
-                        <a href="https://github.com/espnal/netflixclone">
                           <i class="fa-solid fa-code-branch"></i>
-                        </a>
                       </div>
                     </div>
                     <div class="main-content-work">
@@ -828,13 +822,19 @@
 
       function createAlert(){
         div.style.display = 'block';
+        div.style.transition = "opacity 0.5s";
+        div.style.opacity = 1;
+        
       }
       function hidePopup() {
+        div.style.transition = "opacity 0.5s";
+        div.style.opacity = 0;
+        setTimeout(() => {
         div.style.display = 'none';
+          }, 500);
       }
 
       closePopupButton.addEventListener('click', hidePopup);
-
     </script>
     <script src="js/js.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
