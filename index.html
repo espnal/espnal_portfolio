@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="scss/main.css" />
     <link rel="stylesheet" href="scss/medium.css" />
     <link rel="stylesheet" href="scss/small.css" />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    
+    
     <script
       src="https://kit.fontawesome.com/939c9d406a.js"
       crossorigin="anonymous"></script>
@@ -17,10 +21,81 @@
     <!-- <a href="https://www.flaticon.com/free-icons/azure" title="azure icons">Azure icons created by Freepik - Flaticon</a> -->
     <!-- <a href="https://www.flaticon.com/free-icons/wordpress" title="wordpress icons">Wordpress icons created by Freepik - Flaticon</a> -->
     <title>Roguin P. Espinal</title>
+    <style>
+      .outter-alert-div{
+        display: none;
+        transition: 0.3s;
+      }
+      .main-alert-div{
+        position: fixed;
+        box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index:1002;
+        width:600px;
+        height:375px;
+        background-color:#222222;
+        color:#fff;
+      }
+      .inner-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3em;
+      }
+      .close-popup{
+        background-color: #ff8b00;
+        width: 20%;
+        height: 100%;
+        padding: 1rem;
+        margin: 1em 0;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      @media (max-width: 600px) {
+        .main-alert-div {
+          width: 90%; 
+          height: auto; 
+          max-width: 400px; 
+          padding: 1em; 
+        }
+
+        .text-alert {
+          font-size: 14px; 
+          line-height: 1.3em;
+        }
+        .text-alert h2{
+          line-height: 1.1em;
+        }
+        .close-popup{
+          width: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="container-wrap">
+      <div class="outter-alert-div">
+        <div class='main-alert-div'>
+              <div class="inner-div">
+                <lottie-player src="js/code.json" background="transparent" speed="1" style="width: 280px; height: 280px; margin-top: -95px;" loop autoplay></lottie-player>
+                <div class="text-alert" style="margin-top: -38px; text-align: center">
+                  <h2 style="padding-bottom:.5em; font-size:33px">Work in Progress</h2>
+                  <p style="line-height: 1.5em; font-size: 18px;">Hello! Thank you for your interest in this project. I'm working diligently to bring it to completion. Please check back soon for updates and developments.</p>
+                  <button id="close-popup" class="close-popup">Close</button>
+                </div>
+              </div>
+        </div>
+      </div>
       <div class="general-div">
         <div class="hamburger-icon" id="icon">
           <div class="icon-1" id="a"></div>
@@ -637,7 +712,7 @@
                 </div>
                 <div
                   class="work-order"
-                  onclick="location.href=`${Netflixlink}`">
+                  onClick="createAlert()">
                   <div class="text-work-order">
                     <div class="work-icons">
                       <div class="folder">
@@ -745,9 +820,26 @@
       const pokedexlink = "https://espnal.github.io/pokedex/";
       const Netflixlink = "https://espnal.github.io/netflixclone/";
       const recipeApp = "https://recipes-app-view.vercel.app/";
+
+      const div = document.querySelector(".outter-alert-div");
+      const overlay = document.querySelector('.main-alert-div');
+      const popup = document.querySelector('.inner-div');
+      const closePopupButton = document.getElementById('close-popup');
+
+      function createAlert(){
+        div.style.display = 'block';
+      }
+      function hidePopup() {
+        div.style.display = 'none';
+      }
+
+      closePopupButton.addEventListener('click', hidePopup);
+
     </script>
     <script src="js/js.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/typing_animation.js"></script>
+<!--     
+    <script src="js/popup.js"></script> -->
   </body>
 </html>
